@@ -1,0 +1,1417 @@
+@charset "UTF-8";
+
+/*
+	Theme Name: House And Home Realty
+	Author: Southedge.Biz
+	Author URI: southedge.biz
+	Comments: This is a theme built for the house and home realty web development 
+	project. Copyright 2018 Southedge.Biz and Elizabeth Howell.
+	
+	==============================
+	Table Of Contents:
+	==============================
+	1.) Line-19 => Home Page CSS  -- ( NOTE: Subject to change );
+	2.) Line-39 => About Page CSS -- ( NOTE: Subject to change );
+	
+*/
+
+/* =====> Embed The necessary Fonts <====== */
+@font-face {
+    font-family: 'PT serif';
+    src: url('fonts/PTSerif'), url('fonts/PTSerif') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+/* =====> Embed The necessary Fonts <====== */
+body{
+	overflow-x:hidden;
+}
+/*-------Nav Bar----------*/
+	
+	nav.navbar{
+		background-color:rgba(255,255,255,0.97);
+		padding: 0px 5px 0px 5px;
+	}
+	
+	.head-image{
+		background-image:url('../imgs/hhr_t.jpg');
+		height:98px;
+		width:256px;
+		background-repeat:none;
+	}
+	
+	.nav-pos-fix{
+		width: 100%;
+		height:99px;
+	}
+	
+	.pos-nav{
+		float:right;
+		margin-right: 25px;
+	}
+	
+	.navbar-collapse{
+		margin:0;
+	}
+	
+	.navbar-collapse .nav-item a.nav-link{
+		color:#185F91;
+		font-family : PT serif;
+		font-size:17px;
+		letter-spacing:1.5px;
+		line-height:30px;
+		padding:30px;
+		height:99px;
+	}
+	
+	.navbar-collapse .nav-item a.nav-link:hover,
+	.navbar-collapse .nav-item a.nav-link:active{
+		background-color: #185F91;
+		color:white;
+	}
+	
+	div.dd-menu{
+		position:absolute;
+		background-color:rgba(255,255,255,0.9);
+		width:194px;
+		padding:25px 10px 0px 10px;
+	}
+
+	ul.dd-list{
+		list-style:none;
+		margin-left:-34px;
+	}
+	
+	div.dd-menu ul.dd-list li{
+		height:70px;
+	}
+	
+	div.dd-menu ul.dd-list li a{ 
+		color:#185F91;
+		font-size:17px;
+		font-family:PT serif;
+		text-decoration:none;
+		letter-spacing:0.5px;
+		padding:25px 11px 25px 11px;
+	}
+	
+	div.dd-menu ul.dd-list li a:hover{
+		background-color:#185F91;
+		color:white;
+	}
+
+
+	/*==>Media Queries For Nav Bar<==*/
+	@media(max-width:1150px){		
+		.navbar-collapse .nav-item a.nav-link{
+			line-height:25px;
+			font-size:17px;
+		}
+		
+		button.navbar-toggler{
+			height:60px;
+			width:60px;
+			border:none;
+		}
+		
+		span.navbar-toggler-icon{
+			height:40px;
+			width:40px;
+		}
+	}	
+	
+	@media(max-width:750px){
+	
+		.navbar-collapse .nav-item a.nav-link{
+			margin-top:25px;
+			height:0px;
+			line-height:5px;
+			text-align:center;
+			font-size:20px;
+		}
+		
+		div.dd-menu{
+			width:100%;
+			position:relative;
+			background-color:rgba(255,255,255,0.5);
+		}
+		
+		
+		div.dd-menu ul.dd-list li.dd-item a{
+			padding:15px 25% 15px 25%;
+		}
+		
+		.navbar-collapse{
+			margin-bottom:30px;
+		}
+		
+		.nav-item{
+			width:100%;
+		}
+		
+		.nav-item:not(:nth-child(1)){
+			margin-top:-15px;
+		}
+		
+		.pos-nav{
+			float:left;
+			width:100%;
+		}
+	}	
+	/*==>Media Queries For Nav Bar<==*/
+
+/*-------Nav Bar----------*/
+
+
+/*----- Home Page -------*/
+
+	/* ==> Header Section <== */
+	
+		#header-image-home{
+			background-image:url("../imgs/hhr-header.jpg");
+			background-repeat: no-repeat;
+			background-size:100%;
+		}
+		
+		.header-image{
+			height: 442px;
+			width: 100%;
+			background-color:#0D3B56;
+			margin-top:99px;
+		}
+		
+		.contain-welcome-message{
+			width:100%;
+		}
+		
+		.welcome-message{
+			position:relative;
+			padding-top:65px;
+			width:40%;
+			letter-spacing:1px;
+			font-family:helvetica;
+			border-bottom:3px solid white;
+		}
+		
+		.welcome-message h1{
+			color:white;
+			font-family:PT serif;
+			letter-spacing:1.5px;
+			font-size:54px;
+		}
+		
+		.welcome-message p{
+			font-family:helvetica;
+			color:white;
+			margin-top:15px;
+		}
+		
+		#view-our-listings{
+			margin-top:30px;
+			min-width:300px;
+			padding: 30px 0 30px 0;
+			border-radius:45px;
+			background-color:rgba(0,0,0,0);
+			color:white;
+			font-family:PT Serif;
+			letter-spacing:1.5px;
+			border:3px solid white;
+			font-size:20px;
+		}
+		
+		#view-our-listings:hover{
+			color:#185F91;
+			background-color:white;
+		}
+		
+	/* ==> Eof Header Section <== */
+	
+	
+	
+	/* ==> Content Section <== */
+		
+		.content .home-greet-art{
+			padding-top: 30px;
+			padding-left:15px;
+			padding-right:15px;
+			padding-bottom:30px;
+			box-shadow:0px 20px 20px lightgray;
+		}
+		
+		#why-choose-us-head{
+			font-family:PT serif;
+			letter-spacing:1.5px;
+			color:#185F91;
+			font-weight:bold;
+			border-bottom:3px solid  #185F91;
+			width:50%;
+			padding-bottom:5px;
+		}
+		
+		.home-greet-art p{
+			color:#185F91;
+			font-family: PT Serif;
+			font-size:17px;
+		}
+		
+		.content .row{
+			margin:60px 30px 60px 30px;
+		}
+		
+		.content .row div.col-sm-4{
+			padding-left:2%;
+			padding-right:2%;
+			padding-top:30px;
+		}
+		
+		.content .row .col-sm-4 p{
+			font-size: 15px;
+			font-family: helvetica;
+			color: #185F91;
+			margin-bottom: 30px;
+		}
+		
+		.reason-header{
+			font-family: PT serif;
+			font-weight:bold;
+			text-align: center;
+			margin-bottom:15px;
+			margin-top: 5px;
+			color: #185F91;
+		}
+		
+		.content .row .col-sm-4:nth-child(2){
+			border-left:4px solid #185F91;
+			border-right:4px solid #185F91;
+		}
+		
+		.contact-head{
+			margin-left:30px;
+			margin-right:30px;
+		}
+		
+		.contact-head h1{
+			font-family: PT serif;
+			color:white;
+			font-size: 54px;
+			border-bottom: 3px solid white;
+			max-width:950px;
+			margin: 0 auto;
+		}
+		
+		.contact-head p{
+			font-family:helvetica;
+			color:white;
+			letter-spacing:1px;
+			padding-top:15px;
+			font-size:15px;
+			max-width:950px;
+			margin: 0 auto;
+		}
+		
+		.contact-form{
+			background-color:#185F91;
+			padding-top:50px;
+			padding-bottom:50px;
+		}
+		
+		.contact-form div.row{
+			margin:0px;
+			margin-top:60px;
+			margin-left:30px;
+			margin-right:30px;
+		}
+		
+		.contact-form div.row .col-sm-12{
+			padding:0px;
+		}
+		
+		form.wpforms-validate{
+			background-color:white;
+			margin:0 auto;
+			border-radius:30px;
+			margin-top:-30px;
+			max-width: 1000px;
+		}
+		
+		form.wpforms-validate div.wpforms-field-text.wpforms-field, form.wpforms-validate div.wpforms-field-text.wpforms-field{
+			margin:30px;
+			padding-top: 30px;
+			padding-bottom: 30px;
+			width:155%;
+		}
+		
+		form.wpforms-validate label{
+			position:relative;
+			color:#185F91;
+			font-family:PT serif;
+			font-size:21px;
+		}
+		
+		label.wpforms-field-label span.req-ast{
+			color:#9E1B3F;
+			margin-left:30px;
+		}
+		
+		.reason-image{
+			max-width:70%;
+		}
+		
+		
+		#wpforms-126-field_1,
+		#wpforms-126-field_2,
+		#wpforms-126-field_3
+		{
+			height:65px;
+			border-radius: 20px;
+			border: 3px solid #185F91;
+			font-size: 24px;
+			width:100%;
+			padding:0px;
+		}
+
+		#wpforms-126-field_4-container{
+			margin:30px;
+		 }
+		
+	#wpforms-126-field_4{
+			height:255px;
+			border-radius: 20px;
+			border: 3px solid #185F91;
+			font-size: 24px;
+		}
+
+		div.add-border{
+			border:5px solid #185F91;
+		}
+		
+		ul#wpforms-126-field_5{
+			border-radius:5px solid #185F91;
+			width:80%;
+		}			
+
+		#wpforms-126-field_5_3{
+			height:34px;
+			width:34px;
+			border:3px solid #185F91;
+		}
+		
+		#wpforms-126-field_5_3+label {
+			font-size:31px;
+		}
+		
+		button#wpforms-submit-126{
+			margin-top:5px;
+			margin-bottom:30px;
+			width:80%;
+			height:95px;
+			border-radius: 30px;
+			font-family: PT serif;
+			font-size:21px;
+			color:white;
+			letter-spacing:2px;
+			background-color:#185F91;
+			border:0px;
+		}
+		
+	/* ==> Eof Content Section <== */
+	
+	
+	/*==>Media Queries For Home Page<==*/
+	
+	
+		@media(max-width:1063px){
+		
+			#header-image-home{
+				background-position:-15px 0px;
+				background-size: 1070px;
+			}
+			
+			.welcome-message{
+				width:50%;
+			}
+			
+			.welcome-message h1{
+				font-size:34px;
+			}
+			
+			.welcome-message p{
+				font-size: 15px;
+			}
+			
+			#view-our-listings{
+				font-size:15px;
+			}
+			
+			#why-choose-us-head{
+				width:70%;
+			}
+		
+		}
+	
+		@media(max-width:597px){
+			
+			.reason-image{
+				max-width:80%;
+			}
+			
+			.contact-form div.row{
+				margin-left:0px;
+				margin-right:0px;
+			}
+		
+		form.wpforms-validate div.wpforms-field-text.wpforms-field, form.wpforms-validate div.wpforms-field-text.wpforms-field{
+			width:90%;
+		}
+			
+		
+		#wpforms-126-field_4{
+			height:255px;
+			border-radius: 20px;
+			border: 3px solid #185F91;
+			font-size: 24px;
+		}
+			
+		#header-image-home{
+				background-position:-295px 0px;
+				background-size: 970px;
+			}
+		
+		.welcome-message{
+		 		padding-top:35px;
+				width:70%;
+			}
+			
+			#why-choose-us-head{
+				font-size:24px;
+				width:90%;
+			}
+			
+			.contact-head h1{
+				border-bottom: 3px solid white;
+				max-width:1000px;
+				margin: 0 auto;
+			}
+		
+			.contact-head p{
+				max-width:1000px;
+				margin: 0 auto;
+				padding-top:15px;
+			}
+		
+			.content .row .col-sm-4:nth-child(2){
+				border-top:3px solid #185F91;
+				border-bottom:3px solid #185F91;
+				border-left:0px;
+				border-right:0px;
+			}
+			
+			.contact-head h1{
+				width:100%;
+			}
+			
+			.submit-contact-info{
+				width:100%;
+				padding:0px;
+				float:left;
+				margin-top:35px;
+			}
+			
+			.contact-form{
+				padding-bottom:0px;
+			}
+			
+			#wpforms-126-field_5_3{
+				height:20px;
+				width:20px;
+			}
+			
+			#wpforms-126-field_5_3+label {
+				font-size:21px;
+			}
+		}
+		
+@media(max-width:467px){
+
+		
+		form.wpforms-validate div.wpforms-field-text.wpforms-field, form.wpforms-validate div.wpforms-field-text.wpforms-field{
+			width:97%;
+		}
+
+		#wpforms-126-field_4-container,
+		#wpforms-126-field_3-container,
+		#wpforms-126-field_2-container,
+		#wpforms-126-field_1-container{
+			margin:5px;
+		}
+		
+		#wpforms-126-field_4{
+			height:255px;
+			border-radius: 20px;
+			border: 3px solid #185F91;
+			font-size: 24px;
+		}
+}
+		
+		
+	/*==>Media Queries For Home Page<==*/
+	
+/*----- Home Page -------*/
+	
+
+/*----- About Page -------*/
+	/*==> Header Section <==*/
+		
+		#about-header-image{
+			background-image:url("../imgs/hhr-abt-header.jpg");
+			background-position: 0px -250px;
+			background-size:100%;
+			background-repeat:no-repeat;
+		}
+		
+		section#about-header-image div.welcome-message{
+			padding-top:105px;
+		}
+		
+	/*==> Header Section <==*/
+	
+	/* ==> Content Section <== */
+		
+		section#about-intro{
+			width:100%;
+			padding: 30px 30px 60px 30px; 
+		}
+		
+		h1#about-intro-head{
+			font-family: PT serif;
+			color: #185F91;
+			font-size:54px;
+			width:50%;
+			border-bottom:3px solid #185F91;
+		}
+		
+		p#about-intro-content{
+			margin-top:15px;
+			font-family:helvetica;
+			color:#185F91;
+			font-size:17px;
+		}
+		
+		section#show-team{
+			background-color:#EDEDED;
+		}
+		
+		section.team_members{
+			padding:30px 0 30px 0;
+		}
+		
+		div.team-member{
+			background-color:white;
+		}
+		
+		div.team-member div.row{
+			padding: 60px 0 30px 0;
+		}
+		
+		div.team-member div.row div.col-sm-7{
+			padding-right:1%;
+		}
+		
+		div.team-member div.row div.col-sm-5 h5{
+			font-weight:bold;
+			color:#185F91;
+			font-family:PT Serif;
+			border-bottom:3px solid #185F91;
+			text-align:center;
+			width:177px;
+			font-size:24px;
+		}
+		
+		div.team-member div.row div.col-sm-5 p{
+			color:#185F91;
+			font-family:helvetica;
+			letter-spacing:0.5px;
+		}
+		
+		.add-border-left{
+			border-left: 3px solid #185F91;
+		}
+		
+		div.t-img{
+			height:250px;
+			width:250px;
+			background-color:#185F91;
+			border-radius:100%;
+			border:5px solid #185F91;
+			overflow:hidden;
+			box-shadow: 0px 11px 10px 0.5px gray;
+		}
+		
+		.person-name{
+			font-family:PT serif;
+			color: #185F91;
+			border-bottom:7px solid #185F91;
+			font-weight:bold;
+		}
+		
+		.pos-edit-link{
+			padding-top:30px;
+		}
+		
+		.edit-person a{
+			background-color:white;
+			border:3px solid #185F91;
+			color: #185F91;
+			padding:30px;
+			margin-top:60px;
+			letter-spacing:1px;
+			border-radius:50px;
+		}
+
+		.pers-info{
+			max-width:400px;
+			min-width:255px;
+		}
+		
+		div.t-img, div.pers-info{
+			position:relative;
+			display:inline-block;
+			margin-top:70px;
+		}
+	
+		div.meet-team-container{
+			width:100%;
+			padding: 30px 0px 30px 0px;
+		}
+		
+		.move-right{
+			margin-left:85%;
+		}
+	
+		div#meet-the-team-btn{
+			height:60px;
+			width:60px;
+			background-color:#185F91;
+			border-radius:100%;
+			background-image:url("../imgs/down-arrow.png");
+			background-repeat:no-repeat;
+			background-size:70%;
+			background-position: 9px 17px;
+		}
+		
+		div#meet-the-team-btn p{
+			position:absolute;
+			margin-left:-190px;
+			margin-top:5px;
+			color:#185F91;
+			font-family: PT serif;
+			font-size:24px;
+			font-weight:bold
+		}
+		
+		.meet-team{
+			height:100px;
+		}
+		
+		label#meet-the-team{
+			font-family:PT serif;
+			font-style: italic;
+			font-size: 27px;
+			height:40px;
+		}
+		
+	/* ==> Eof Content Section <== */
+	
+	
+	/*==>Media Queries For Home Page<==*/
+		
+		@media(max-width:575px){
+			
+			h1#about-intro-head{
+				font-size:34px;
+				width:70%;
+			}
+		
+			.add-border-left{
+				border:none;
+			}
+			
+			.add-border-resp-top{
+				border-top:3px solid #185F91;
+			}
+			
+			 div.team-member div.col-sm-7 p.t-inf{
+				padding:5px 0 30px 0;
+				margin:0 auto;
+			}
+			
+			.person-name{
+				text-align:center;
+				font-size:34px;
+				margin-top:15px;
+				border-bottom:none;
+				font-weight:bold;
+			}
+			
+			div.team-member div.row div.col-sm-5 img.epic{
+				margin-top:30px;
+			}
+			
+			p.t-inf{
+				padding:0px
+			}
+			
+			.t-img{
+				margin: 0 auto;
+				width:50%;
+			}
+			
+			div.t-img, div.pers-info{
+				position:relative;
+				display:block;
+			}
+			
+		}
+
+		div.team-member div.row,div.team-member div.row div.col-sm-7 {
+			padding:0px;
+		}
+
+		div.fix-col.row{
+			margin:0px;
+		}
+		
+		div.fix-col.row div.col-sm-7{
+			padding:0px;
+		}
+		
+	/*==>Media Queries For Home Page<==*/
+	
+	
+/*----- About Page -------*/
+
+
+/*----- News And Listings Page -------*/	
+
+	/* ==> Content Section <== */
+		
+		.ddb-clearfix{
+			margin-top:-300px;
+		}
+		
+		#news-and-prop-posts{
+			background-color:#EDEDED;
+			margin-top:99px;
+		}
+		
+		.art-posts{
+			padding: 30px 30px 90px 30px;
+			margin-top:30px;
+			background-color:white;
+			margin-left:30px;
+			margin-bottom:30px;
+		}
+		
+		.article-image{
+			height:315px;
+			width:100%;
+			background-color:#185F91;
+			overflow:hidden;
+		}
+		
+		.about-art-head{
+			font-family: PT serif;
+			color:#185F91;
+			font-size: 30px;
+			border-bottom:3px solid #185F91;
+			padding-bottom:5px;
+			padding-top:15px;
+			margin-bottom:15px;
+		}
+		
+		.about-art-content{
+			font-family:helvetica;
+			color:#185F91;
+		}
+		
+		div.to-house-btn{
+			height:45px;
+			width:45px;
+			background-color:#185F91;
+			border-radius:100%;
+			background-image:url("../imgs/right-arrow.png");
+			background-repeat:no-repeat;
+			background-size:45%;
+			background-position: 15px 8px;
+			float:right;
+			margin-top:15px;
+			margin-bottom:60px;
+		}
+		
+		p.to-listing-page{
+			position:absolute;
+			margin-left:-177px;
+			margin-top:3px;
+			color:gray;
+			font-family: PT serif;
+			font-size:21px;
+			font-style:italic;
+		}
+		
+		.rm-contain{
+			width:100%;
+		}
+		
+		.line{
+			width: 100%;
+			border:1px solid gray;
+			margin-top:-30px;
+			position:relative;
+			z-index:1
+		}
+		
+		.rm-label{
+			color:gray;
+			font-family:PT serif;
+			font-style: italic;
+			font-size: 17px;
+			background-color:white;
+			position:relative;
+			z-index:2;
+			width:110px;
+		}
+
+		.rm-label:hover,.rm-label:active,.rm-label:visited{
+			text-decoration:none;
+			color:gray;
+		}
+		
+		.search-posts,.recent-posts{
+			background-color:white;
+			margin-top:30px;
+			padding-top:30px;
+			padding-bottom:60px;
+			margin-right:15px;
+		}
+		
+		.search-header,.recent-posts-header{
+			margin-left:30px;
+			font-family:PT serif;
+			border-bottom: 3px solid #185F91;
+			padding-bottom:5px;
+			font-weight: regular;
+			color:#185F91;
+			margin-bottom:30px;
+			margin-right:80px;
+		}
+		
+		form.search{
+			padding: 0px 30px 0px 30px;
+		}
+		
+		div.contain-txt{
+			border: 3px solid #185F91;
+			border-radius:7px;
+		}
+		input.search-txt{
+			border:none;
+			padding: 6px 15px 6px 15px;
+			border-radius: 7px;
+			width:100%;
+			font-family:helvetica; 
+			color:#185F91;
+			margin-bottom:5px;
+		}
+		
+		input.submit-search-form{
+			margin-right:0px;
+			padding: 9px 0px 9px 0px;
+			width:100%;
+			background-color:#185F91;
+			border:none;
+			border-radius:3px;
+			text-align:center;
+			font-family:PT serif;
+			color:white;
+			letter-spacing:1px;
+			margin-top:7px;
+			float:right
+		}
+		
+		.recent-posts-content{
+			margin-top:-15px;
+		}
+		
+		.recent-posts-content ul{
+			list-style:none;
+		}
+		
+		.recent-posts-content ul li a{
+			color:gray;
+			font-family: PT serif;
+			font-size:15px;
+			font-style:italic;
+			margin-bottom:5px;
+		}
+		
+		span.p-date-span{
+			color:#185F91;
+			font-weight:bold;
+			font-family:PT Serif;
+		}
+		
+		.static-menu{
+			position:fixed;
+			width:40%;
+		}
+		
+		#listings-nav{
+			background-color:#f7f7f7;
+			width:100%;
+			position:relative;
+		}
+		
+		.pos-men{
+			width:100%;
+		}
+		
+		ul#menu-posts-child-nav{
+			height:70px;
+			padding: 15px 0 15px 0;
+			margin-left:30px;
+			position:relative;
+		}
+		
+		ul#menu-posts-child-nav li{
+			display: inline-block;
+			list-style:none;
+			position:relative;
+		}
+		
+	   ul#menu-posts-child-nav li:nth-child(1){
+			padding-right:2%;
+		}
+		
+		ul#menu-posts-child-nav li:nth-child(2){
+			padding-left:2%;
+			border-left:3px solid #185F91;
+		}
+		
+		 ul#menu-posts-child-nav li a{
+			text-decoration:none;
+			font-family:PT serif;
+			font-size:17px;
+			color:#185F91;
+			letter-spacing:1px;
+		}
+		
+		.drop-down-btn{
+			background-image:url("../imgs/drop-down-btn.png");
+			background-repeat:no-repeat;
+			border:none;
+			padding:30px;
+			width:100%;
+			background-color:#185F91;
+			background-position:center;
+			
+		}
+		
+	/* ==> Eof Content Section <== */
+	
+		
+	
+	/*==------Individual Article CSS--------==*/
+	
+		.art-content{
+			padding:30px;
+		}
+		
+		.art-content .art-body .art-header{
+			font-family:PT Serif;
+			border-bottom:3px solid #185F91;
+			width:50%;
+			color:#185F91;
+			padding-bottom:5px;
+		}
+		
+		.art-content .art-body .art-paragraph{
+			margin-top:15px;
+			font-family:helvetica;
+			color:#185F91;
+		}
+		
+		.pagination-contain{
+			background-color:#185F91;
+			width:100%;
+			height:70px;
+			padding: 0 9px 0 9px;
+		}
+		
+		.inline-back-links{
+			height:100px;
+			width:100%;
+			padding : 0 15px 0 15px;
+			position:relative;
+			margin-top:-30px;
+		}
+		
+		.inline-pgn-links{
+			height:100px;
+			width:100%;
+			position:relative;
+		}
+		
+		.inline-pgn-links a:nth-child(1){
+			margin-right:0px;
+		}
+		
+		div.back-to-listings-page{
+			height:45px;
+			width:45px;
+			background-color:#185F91;
+			border-radius:100%;
+			background-image:url("../imgs/right-arrow.png");
+			background-repeat:no-repeat;
+			background-size:45%;
+			background-position: 15px 8px;
+			float:right;
+			margin-top:30px;
+		}
+		
+		div.view-prop-lst{
+			height:45px;
+			width:45px;
+			background-color:#185F91;
+			border-radius:100%;
+			background-image:url("../imgs/left-arrow.png");
+			background-repeat:no-repeat;
+			background-size:45%;
+			background-position: 10px 8px;
+			float:left;
+			margin-top:30px;
+		}
+		
+		
+		.next-link{
+			float:right;
+			margin-top:5px;
+			margin-right:5px;
+		}
+		
+		.previous-link{
+			float:left;
+			margin-top:5px;
+			margin-right:5px;
+		}
+		
+		.next-link a, .previous-link a, .next-link a:hover, .previous-link a:hover{
+			color:white;
+			font-family: PT serif;
+			font-size:21px;
+			font-style:italic;
+			text-decoration:none;
+			position:absolute;
+			width:200px;
+		}
+		
+		.next-link a{
+			margin-left:-100px;
+		}
+		
+		.previous-link a{
+			margin-left:50px;
+		}
+		
+		.pgn-prev{
+			height:45px;
+			width:45px;
+			border-radius:100%;
+			background-image:url("../imgs/left-arrow.png");
+			background-repeat:no-repeat;
+			background-size:45%;
+			background-position: 15px 8px;
+			margin-top:5px;
+			margin-bottom:60px;
+		}
+		
+		.pgn-next{
+			height:45px;
+			width:45px;
+			border-radius:100%;
+			background-image:url("../imgs/right-arrow.png");
+			background-repeat:no-repeat;
+			background-size:45%;
+			background-position: 15px 8px;
+			margin-top:5px;
+			margin-bottom:60px;
+		}
+		
+		p.back-label{
+			position:absolute;
+			margin-left:-131px;
+			margin-top:3px;
+			color:gray;
+			font-family: PT serif;
+			font-size:21px;
+			font-style:italic;
+		}
+		
+		p.prop-label{
+			position:absolute;
+			margin-left:51px;
+			margin-top:3px;
+			color:gray;
+			font-family: PT serif;
+			font-size:21px;
+			font-style:italic;
+		}
+		
+	
+		/*==> Property Articles<==*/
+			
+		/*==> Property Articles<==*/
+		
+		
+		/*==> News Articles<==*/
+		
+		/*==> News Articles<==*/
+		
+		
+		/*==>Media Queries For Individual Articles Pages<==*/
+		
+			@media(max-width:1063px){
+				
+				#about-header-image{
+					background-image:url("../imgs/hhr-abt-header.jpg");
+					background-position: -250px -250px;
+					background-size:1297px;
+					background-repeat:no-repeat;
+				}
+				
+				section#about-header-image div.welcome-message{
+					padding-top:125px;
+				}
+			
+				.art-content .art-body .art-header{
+					font-size:34px;
+					width:70%;
+				}
+				
+				p.back-label{
+					position:absolute;
+					margin-left:-107px;
+					margin-top:9px;
+					color:gray;
+					font-family: PT serif;
+					font-size:17px;
+					font-style:italic;
+				}
+		
+				p.prop-label{
+					position:absolute;
+					margin-left:51px;
+					margin-top:9px;
+					color:gray;
+					font-family: PT serif;
+					font-size:17px;
+					font-style:italic;
+				}
+			
+				.next-link a, .next-link a:hover{
+					position:absolute;
+					margin-left:-70px;
+					margin-top:9px;
+					color:white;
+					font-family: PT serif;
+					font-size:15px;
+					font-style:italic;
+					width:150px;
+				}
+				
+				.previous-link a,.previous-link a:hover{
+					position:absolute;
+					margin-left:51px;
+					margin-top:9px;
+					color:white;
+					font-family: PT serif;
+					font-size:15px;
+					font-style:italic;
+					width:150px;
+				}
+			}
+			
+			@media(max-width:563px){
+				
+				#about-header-image{
+					background-image:url("../imgs/hhr-abt-header.jpg");
+					background-position: -450px -250px;
+					background-size:1167px;
+					background-repeat:no-repeat;
+				}
+				
+				section#about-header-image div.welcome-message{
+					padding-top:95px;
+				}
+				
+				.art-content .art-body .art-header{
+					font-size:25px;
+					width:90%;
+				}
+			}
+			
+		/*==>Media Queries For Individual Articles Pages<==*/
+		
+	/*==------Individual Article Css--------==*/
+
+	/*==>Media Queries For News And Listings Page<==*/
+	
+		@media(max-width:1063px){
+			.attachment-post-thumbnail{
+				margin-left:-100px;
+			}
+		
+			.static-menu{
+				margin-top:0px;
+			}
+			
+			.recent-posts-content ul li a{
+				font-size:13px;
+				margin-bottom:5px;
+			}
+			
+			.recent-posts-content{
+				margin-top:-15px;
+			}
+			
+			input.submit-search-form{
+				margin-right:0px;
+				margin-top:7px;
+				width:100%;
+				margin-left:0px;
+			}
+			
+			.search-posts{
+				padding-bottom:60px;
+			}
+			
+			.recent-posts-header{
+				font-size:17px;
+				margin-top:-5px
+			}
+			
+			.search{
+				margin-top:-15px;
+			}
+			
+			form.search{
+				padding:0px 15px 0px 25px;
+			}
+			
+			.search-header{
+				font-size:17px;
+			}
+			
+			input.search-txt{
+				margin:0px;
+				width:100%;
+			}
+		}
+
+		@media(max-width:763px){
+			ul#posts-child-nav{
+				margin-bottom:15px;
+			}
+			
+			.article-image{
+				height:255px;
+				width:100%;
+				background-color:#185F91;
+				overflow:hidden;
+			}
+		}
+
+		@media(max-width:576px){
+			.art-posts{
+				margin-left:0px;
+			}
+			
+			.attachment-post-thumbnail{
+				margin-left:-30px;
+			}
+			
+			.search-header, .recent-posts-header{
+				font-size:27px;
+				text-align:center;
+				border:none;
+				width:100%;
+				margin: 0px 0px 15px 0px;
+			}
+			
+			.search-posts{
+				margin-right:0px;
+			}
+			
+			.recent-posts{
+				margin-right:0px;
+				margin-top:-45px;
+			}
+			
+			.recent-posts-content{
+				margin-top:15px;
+				display: block;
+				width:100%;
+				font-size:21px;
+			}
+			
+			.recent-posts-content ul{
+				display:block;
+				margin-left:15%;
+			}
+			
+			.recent-posts-content ul li {
+				margin-bottom:7px;
+				margin-left:5%;
+			}
+			
+			.recent-posts-content ul li a{
+				font-size:14px;
+				text-align:center;
+			}
+			
+			#listings-nav ul#menu-posts-child-nav li:nth-child(2){
+				border:none;
+			}
+		
+			#static{
+				border-bottom:3px solid #185F91;
+			}
+		}
+
+@media(max-width:463px){
+		.recent-posts-content ul{
+			display:block;
+			margin-left:5px;
+		}
+}
+
+@media(max-width:363px){
+		.recent-posts-content ul{
+			display:block;
+			margin-left:-15px;
+		}
+}
+	/*==>Media Queries For News And Listings Page<==*/
+	
+	
+	
+/*----- News And Listings Page -------*/
+
+/*------ Footer Section-----*/
+
+	footer{
+		height:120px;
+		width:100%;
+		background-color:#0D3B56;
+	}
+
+/*------ Footer Section-----*/
